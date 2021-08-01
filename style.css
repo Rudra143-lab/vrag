@@ -1,0 +1,150 @@
+body {
+    background-image: url(background.jpg);
+    overflow: hidden;
+    animation: up_down 0.6s linear infinite;
+}
+
+#track {
+    position: absolute;
+    bottom: -829px;
+    left: 0;
+    animation: go 3s linear infinite;
+    height: 60vh;
+    width: 800vw;
+}
+
+#trees {
+    position: absolute;
+    top: -350px;
+    left: 0;
+}
+
+.v img {
+    width: 200px;
+    position: absolute;
+}
+
+.car img {
+    top: 348px;
+    animation: up_down 0.6s linear infinite;
+}
+
+.labo img {
+    top: 563px;
+    left: 400px;
+    width: 250px;
+    animation: up_down 0.6s linear infinite;
+}
+
+.truck img {
+    top: 428px;
+    left: 1128px;
+    animation: up_down 0.6s linear infinite;
+}
+
+.bus img {
+    top: 315px;
+    left: 600px;
+    width: 275px;
+    animation: up_down 0.6s linear infinite;
+}
+
+#w1 {
+    position: absolute;
+    top: 375px;
+    height: 43px;
+    left: 18px;
+    animation: rotate 0.3s linear infinite;
+}
+
+#w2 {
+    position: absolute;
+    top: 375px;
+    height: 46px;
+    left: 134px;
+    animation: rotate 0.3s linear infinite;
+
+}
+
+#w3 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 373px;
+    left: 657px;
+    animation: rotate 0.3s linear infinite;
+    /* animation: up_down 0.6s linear infinite; */
+}
+
+#w4 {
+    height: 50px;
+    position: absolute;
+    left: 813px;
+    top: 373px;
+    animation: rotate 0.3s linear infinite;
+    /* animation: up_down 0.6s linear infinite; */
+}
+
+#w5 {
+    position: absolute;
+    top: 590px;
+    height: 50px;
+    left: 428px;
+    animation: rotate 0.3s linear infinite;
+    /* animation: up_down 0.6s linear infinite; */
+}
+
+#w6 {
+    position: absolute;
+    top: 589px;
+    height: 50px;
+    left: 554px;
+    animation: rotate 0.3s linear infinite;
+    /* animation: up_down 0.6s linear infinite; */
+}
+
+#w7 {
+    position: absolute;
+    top: 475px;
+    height: 70px;
+    left: 1162px;
+    animation: rotate 0.3s linear infinite;
+    /* animation: up_down 0.6s linear infinite; */
+}
+
+#w8 {
+    position: absolute;
+    top: 471px;
+    height: 77px;
+    left: 1252px;
+    animation: rotate 0.3s linear infinite;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes go {
+    100% {
+        transform: translateX(-500vw);
+    }
+}
+
+@keyframes up_down{
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
